@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Read the latest ProResize changelog, feature improvements, mobile updates, bug fixes, and release notes.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#00B8A9">
+<link rel="canonical" href="https://proresize.com/whats-new.html">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
+<link rel="shortcut icon" href="favicon.ico?v=3">
+<title>What's New - ProResize</title>
+<meta property="og:type" content="article">
+<meta property="og:title" content="What's New - ProResize">
+<meta property="og:description" content="See the latest ProResize release notes, improvements, and fixes in the What's New changelog page.">
+<meta property="og:url" content="https://proresize.com/whats-new.html">
+<meta property="og:site_name" content="ProResize">
+<meta property="og:image" content="https://proresize.com/favicon.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What's New - ProResize">
+<meta name="twitter:description" content="See the latest ProResize release notes, improvements, and fixes in the What's New changelog page.">
+<meta name="twitter:image" content="https://proresize.com/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=101">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "What's New - ProResize",
+  "url": "https://proresize.com/whats-new.html",
+  "description": "Release notes and changelog updates for ProResize.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "ProResize",
+    "url": "https://proresize.com/"
+  }
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html" aria-label="Go to ProResize home page">
+    <img src="favicon.png" alt="ProResize Logo">
+    <span><em>Pro</em>Resize</span>
+  </a>
+  <div class="nav-right">
+    <a class="nav-link-btn" href="index.html">Home</a>
+    <a class="nav-link-btn" href="about.html">About</a>
+    <a class="nav-link-btn active" href="whats-new.html" aria-current="page">What's New</a>
+    <a class="nav-link-btn" href="privacy-policy.html">Privacy</a>
+    <span class="version-badge">V3</span>
+    <a class="nav-link-btn nav-link-cta extension-link" href="https://chromewebstore.google.com/detail/pnoiakadofbpjaibijfcpchejckphapa?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Get Extension</a>
+    <div class="theme-toggle" id="themeToggle" title="Toggle theme"></div>
+  </div>
+</nav>
+
+<section class="hero about-hero">
+  <div class="hero-badge">What's New</div>
+  <h1>Recent updates to ProResize.</h1>
+  <p>See the latest ProResize features, improvements, and fixes.</p>
+</section>
+
+<section class="about-section">
+  <div class="changelog-wrap">
+    <article class="changelog-card">
+      <div class="changelog-header">
+        <div><span class="changelog-version">V3</span></div>
+        <div class="changelog-date">November 12, 2026</div>
+      </div>
+      <h2>PDF export and Chrome extension access.</h2>
+      <p>ProResize V3 adds a PDF output option and a direct link to the Chrome extension.</p>
+      <ul class="change-list">
+        <li><strong>PDF output:</strong> export compressed or resized images as a PDF.</li>
+        <li><strong>Updated formats:</strong> removed WebP from output choices; JPEG and PNG remain available.</li>
+        <li><strong>Chrome extension:</strong> use the new header link to open ProResize in the Chrome Web Store.</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  Made with ♥ by <strong>ProResize</strong> - Smart image tools, free forever.
+  <br><span class="footer-version">Version V3</span>
+  <br><span style="margin-top:6px;display:inline-block;">Need help? <a href="mailto:support@proresize.com">support@proresize.com</a></span>
+  <br><span style="margin-top:6px;display:inline-block;"><a href="privacy-policy.html">Privacy Policy</a></span>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+  const savedTheme = localStorage.getItem('proresize-theme');
+  if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+
+  themeToggle.addEventListener('click', function() {
+    const html = document.documentElement;
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('proresize-theme', next);
+  });
+})();
+</script>
+
+</body>
+</html>
